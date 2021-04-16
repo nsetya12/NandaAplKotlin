@@ -10,17 +10,34 @@
         android:layout_height="match_parent"
         android:src="@drawable/bg"
         android:scaleType="centerCrop" />
+
     <EditText
-        android:layout_width="match_parent"
+        android:id="@+id/nama_edit_text"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:height="60dp"
+        android:background="#d3e9fe"
+        android:fontFamily="serif"
         android:hint="Masukkan Nama"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         android:textSize="30sp"
-        android:id="@+id/nama_edit_text" />
+        android:textStyle="bold" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
         android:layout_below="@id/nama_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="serif-monospace"
+        android:onClick="submit_btn"
+        android:text="SUBMIT"
+        android:textColor="#FAF6F6"
         android:textSize="30sp"
-        android:onClick="submit_btn" />
+        android:textStyle="bold" />
 </RelativeLayout>
